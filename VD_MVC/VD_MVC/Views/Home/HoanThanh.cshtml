@@ -1,0 +1,27 @@
+﻿@model VD_MVC.Models.KhachMoi
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>HoanThanh</title>
+</head>
+<body>
+    <div> 
+       @if (Model.ThamDu == true)
+       {
+           <h4>Thanks, @Model.HoTen</h4>
+           <b>See you at party!</b>
+       }
+       else
+       {
+           <h4>Thanks, @Model.HoTen</h4>
+           <b>See you another time!</b>
+       }
+    </div>
+</body>
+</html>
